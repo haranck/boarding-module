@@ -73,7 +73,7 @@ class BinaryTree {
         return bst;
     }
 }
-console.log()
+
 const tree = new BinaryTree();
 
 tree.insert(1);
