@@ -345,38 +345,38 @@ ll.print();
 
 //Find Head and tail in O(1) in a linkedlist
 
-class Node {
-    constructor(value) {
-        this.value = value;
-        this.next = null;
-    }
-}
-class LinkedList {
-    constructor() {
-        this.head = null;
-        this.tail = null;
-    }
-    insert(value) {
-        let newNode = new Node(value);
+// class Node {
+//     constructor(value) {
+//         this.value = value;
+//         this.next = null;
+//     }
+// }
+// class LinkedList {
+//     constructor() {
+//         this.head = null;
+//         this.tail = null;
+//     }
+//     insert(value) {
+//         let newNode = new Node(value);
 
-        if (!this.head) {
-            this.head = newNode;
-            this.tail = newNode;
-        } else {
-            this.tail.next = newNode;
-            this.tail = newNode;
-        }
-    }
-}
+//         if (!this.head) {
+//             this.head = newNode;
+//             this.tail = newNode;
+//         } else {
+//             this.tail.next = newNode;
+//             this.tail = newNode;
+//         }
+//     }
+// }
 
-const ll = new LinkedList();
-ll.insert(10);
-ll.insert(20);
-ll.insert(30);
-ll.insert(40);
+// const ll = new LinkedList();
+// ll.insert(10);
+// ll.insert(20);
+// ll.insert(30);
+// ll.insert(40);
 
-console.log(ll.head.value);
-console.log(ll.tail.value);
+// console.log(ll.head.value);
+// console.log(ll.tail.value);
 
 
 /*
