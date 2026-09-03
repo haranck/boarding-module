@@ -458,7 +458,7 @@ function reverse(head,k){
 
 
 const node1 = new ListNode(1)
-const node2 = new ListNode(2)
+const node2 = new ListNode(2)   
 const node3 = new ListNode(3)
 const node4 = new ListNode(4)
 const node5 = new ListNode(5)
