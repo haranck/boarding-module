@@ -315,6 +315,15 @@ class LinkedList {
             index++;
         }
     }
+    printPattern() {
+        let curr = this.head;
+        let res = "";
+        while (curr) {
+            res = curr.value + "->" + res;
+            console.log(res);
+            curr = curr.next;
+        }
+    }
 
     print() {
         let current = this.head;
