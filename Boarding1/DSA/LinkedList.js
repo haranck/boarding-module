@@ -301,6 +301,20 @@ class LinkedList {
             current = newNode.next;
         }
     }
+    isPowerOftWO() {
+        let index = 1;
+        let skippedIndex = 1;
+        let temp = this.head;
+        while (temp) {
+            if (index === skippedIndex) {
+                skippedIndex = skippedIndex * 2;
+            } else {
+                console.log(temp.value);
+            }
+            temp = temp.next;
+            index++;
+        }
+    }
 
     print() {
         let current = this.head;
@@ -340,7 +354,7 @@ console.log("first and last two sum ", ll.sumFirstLastTwo());
 // ll.delete3rdFromLast();
 ll.addPairsSumBetweenPairs();
 ll.print();
-
+// ll.isPowerOftWO()
 ///////////////////////////////////////////
 
 //Find Head and tail in O(1) in a linkedlist
@@ -377,7 +391,6 @@ ll.print();
 
 // console.log(ll.head.value);
 // console.log(ll.tail.value);
-
 
 /*
 
